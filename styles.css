@@ -1,0 +1,35 @@
+.animated-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .animated-button:hover {
+    background-color: #0056b3;
+    animation: pulse 1s infinite alternate; /* Apply the pulse animation on hover */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .animated-image {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .animated-image.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+  }
